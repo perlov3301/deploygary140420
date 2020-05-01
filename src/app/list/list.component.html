@@ -1,0 +1,18 @@
+<fieldset>
+    <legend><a href="{{ githubwiki }}" >api from wikijson</a></legend>
+    <!-- if exist -->
+    <ul *ngIf="brews">
+        <li *ngFor="let brew of brewskeys">
+            <p class="name">{{ brew }} : {{ brews[brew] }}</p>
+        </li>
+    </ul>
+    <!-- <p *ngIf="brews">first name: {{ brews["firstName"] }}</p> -->
+</fieldset>
+<fieldset>
+    <legend><a href="{{ githubgary }}" >api from garyjson</a></legend>
+    <ul *ngIf="systems">
+        <li *ngFor="let sys of systems">
+            <p >name: {{ sys.name }}</p>
+        </li>
+    </ul>
+</fieldset>

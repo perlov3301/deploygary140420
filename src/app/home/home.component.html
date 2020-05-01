@@ -1,0 +1,20 @@
+<h1>Welcome</h1>
+<div class="play-container">
+    <p>You've clicked<button (click)="countClick()">this</button>{{ clickCounter }} times.</p>
+</div>
+<div class="play-container">
+    <p >
+        <input type="text" [(ngModel)]="name"> <strong>You said: </strong> {{ name }}
+    </p>
+    <p >
+        <input type="text" [(ngModel)]="name1"/><strong>Hello</strong> {{ name1 }}
+    </p>
+</div>
+<div class="play-container" [ngClass]="setmyClasses()">
+    <ng-template [ngIf]="clickCounter > 4" [ngIfElse]="none">
+        <p>the click counter <strong>is greater</strong> than 4.</p>
+    </ng-template>
+    <ng-template #none>
+        <p>the click counter is <strong>not greater</strong> than 4.</p>
+    </ng-template>
+</div>

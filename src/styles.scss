@@ -1,1 +1,72 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
+/* @import url('https://fonts.googleapis.com/css?family=Tangerine'); */
+$primary: rgba(111, 0, 255, 0.9);
+body {
+    font-family: 'Nunito', 'sans-serif';
+    font-size: 18px;
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+header {
+    // position: static;
+    background: $primary;
+    padding: 1em 0;
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    a.logo {
+        font-weight: bold;
+    }
+    nav {
+        float:right;
+        ul {
+            list-style-type: none;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            li div {
+                width: 120px;
+                height: 1.7em;
+                padding-top: 0.5em;
+                margin-top: -0.5em;
+                margin-left: 0.3em;
+                flex: 1;
+                text-align: center;
+                &:hover {
+                    background: darken($primary, 10%);
+                }
+                a {
+                    padding: 1em;
+                    
+            }
+            }
+        }
+    }
+}
+
+h1 {
+    margin-top: 0.5em;
+}
+input {
+    border-radius: 0.3em;
+}
+// without <div tabindex="0">
+// nav {
+//     float: right;
+//     ul {
+//         list-style-type: none;
+//         margin: 0;
+//         display: flex;
+//         li a {
+//             padding: 1em;
+//             &:hover {
+//                 background: darken($primary, 10%);
+//             }
+//         }
+//     }
+// }
+

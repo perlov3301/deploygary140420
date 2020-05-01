@@ -1,0 +1,50 @@
+<h1>Welcome!</h1>
+<div class="play-container">
+    <p>You've clicked 
+<!-- click event=>method countClick() -->
+        <!-- <span (click)='countClick()' >this</span> -->
+        <button (click)='countClick()'>this</button>
+        <strong>{{ clickCounter }}</strong>  times
+    </p>
+</div>
+<!-- form: two ways data binding -->
+<div class="play-container">
+    <p>
+    <!-- intput receive and send info -->
+        <input type="text" [(ngModel)]="name"> 
+        <br>
+        <strong>You said:</strong> {{ name }}
+    </p>
+</div> 
+<!-- css class binding -->
+<div class="play-container" [class.active]="clickCounter > 4">
+    <ng-template [ngIf]="clickCounter > 4" [ngIfElse]="none" >
+        <p>css class .active:the click counter <strong>IS greater</strong> than 4</p>
+    </ng-template>
+    <ng-template #none><p>css class .active:the click is not greater than 4</p></ng-template>
+</div> 
+<!-- style binding = inline property binding -->
+<div class="play-container" [style.background-color]="clickCounter > 4 ? 'yellow' : 'rgba(100, 125, 100, 0.26)'">
+<!-- if.. boolean value or ..? -->
+  <ng-template [ngIf]="clickCounter > 4" [ngIfElse]="none" >
+     <p>inline css binding:the click counter <strong>IS greater</strong> than 4</p>
+  </ng-template>
+ <!-- else -->
+  <ng-template #none><p>binline css binding:the click is not greater than 4</p>
+  </ng-template>
+</div> 
+<!-- multiple css properties -->
+<div class="play-container" [ngStyle]="{
+    'background-color': clickCounter > 4 ? 'yellow' : 'lightgray',
+    'border':           clickCounter > 4 ? '4px solid black' : 'none'
+  }">
+     <ng-template [ngIf]="clickCounter > 4" [ngIfElse]="none" >
+         <p>multiple css properties:the click counter <strong>IS greater</strong> than 4</p>
+     </ng-template>
+     <ng-template #none><p>multiple css properties:the click is not greater than 4</p>
+     </ng-template>
+</div> 
+
+
+    
+
