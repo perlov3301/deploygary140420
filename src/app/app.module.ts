@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ListComponent } from './list/list.component';
 import { NavComponent } from './nav/nav.component';
+import { PromiseComponent } from './promise/promise.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { NavComponent } from './nav/nav.component';
     AppComponent,
     HomeComponent,
     ListComponent,
-    NavComponent
+    NavComponent,
+    PromiseComponent
   ],
   imports: [
     BrowserModule,
