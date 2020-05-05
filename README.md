@@ -19,6 +19,7 @@ git init
 git add .
 git commit -m "first commit"
 git remote add origin https://github.com/perlov3301/gary140420.git
+                      https://github.com/perlov3301/promise.git
 git push -u origin master
 
 `add file to github`:
