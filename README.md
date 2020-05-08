@@ -1,5 +1,12 @@
 # Gary140420
-
+cd gary140420  
+git init      
+git add .    
+git commit -m "first commit"   
+git remote add origin https://github.com/perlov3301/deploydist1.git   
+git push -u origin master   
+ng build --prod --base-href "https://perlov3301.github.io/deploygary140420/"    
+ngh --dir dist/gary140420    
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1.
 
 ## Development server
