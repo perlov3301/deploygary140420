@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Gary140420
 cd gary140420  
 git init      
@@ -43,3 +44,6 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
+=======
+# deploydist1 dist folder of gary140420 angular 8/9 tutorial
+>>>>>>> 360034ac41ea7d552ab9fcbf1dd272d8f923e90f
