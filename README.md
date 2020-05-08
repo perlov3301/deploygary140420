@@ -25,9 +25,10 @@ git push -u origin master
 `add file to github`:
 git add .
 git commit -m "Adding existing file"
+git remote add origin https://github.com/perlov3301/gary140420.git
 git push origin ..your-branch..
 or 
-git push origin master
+git push -u origin master
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
