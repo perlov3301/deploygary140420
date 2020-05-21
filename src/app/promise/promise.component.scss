@@ -1,0 +1,11 @@
+fieldset {
+    margin-top: 0.5em;
+    border: 2px solid rgba(100, 125, 100, 0.26);
+    border-radius: 0.5em;
+    legend {
+        background-color: rgba(125, 125, 100, 0.86);
+        padding: 0 0.3em 0 0.3em;
+        border-radius: 0.3em;
+        color: white
+    }
+}

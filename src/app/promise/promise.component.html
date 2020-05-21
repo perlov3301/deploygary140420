@@ -1,1 +1,34 @@
-<p>promise works!</p>
+<fieldset>
+    <legend>ecma2020=ES2020</legend>
+    <legend>   <strong>{{ hello1() }}</strong><br/></legend>
+    the null coaliscing operator will go through a list and return<br/>
+    the first item (even false) that is not null or undefined <br/>
+    <strong>
+        null or 'hi' ={{ a1 }} <br/>
+    undefined or 'hey' = {{ a2 }} <br/>
+    false or 'hola' = {{ a3 }} <br/>
+    null or 'first or second or ..'= {{ a4 }}<br/>
+    null or undefined or 'third'= {{ a5 }} <br/>
+    0 or 'bonjour'= {{ a6 }} <br/>
+    'first' or 'second'= {{ a7 }}<br/>
+    undefined or object=&#123; {{ a81 }}: '{{ a8[a81] }}' &#125;<br/>
+    undefined variable or object= {{ a9 }}<br/>
+    variable that is false or true = {{ a11 }}<br/>
+    chain from null and so on= {{ a12 }}<br/>
+    another chain = {{ a13 }}
+    <div>
+      <ng-template [ngIf]="a15isloaded == true" [ngIfElse]="a15false">
+        <ng-template [ngIf]="a16havespose == true" [ngIfElse]="a16false">
+          <p>json to object = {{ a14['firstName'] }}:spouse is {{ a14['spouse'] }}</p> 
+        </ng-template>
+        <ng-template #a16false>
+          <p>json to object = {{ a14['firstName'] }}; spouse is null</p> 
+        </ng-template>
+      </ng-template>
+      <ng-template #a15false><p>data is loading...</p></ng-template>
+    </div>
+    
+    </strong>
+    
+
+</fieldset>
